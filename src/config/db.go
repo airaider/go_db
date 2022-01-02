@@ -5,7 +5,7 @@ import (
 	"os"
 
 	controllers "github.com/airaider/go_db/controllers"
-	"github.com/go-pg/pg"
+	"github.com/go-pg/pg/v9"
 )
 
 //Connection to db
