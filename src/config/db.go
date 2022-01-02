@@ -4,6 +4,7 @@ import (
 	"log"
 	"os"
 
+	controllers "github.com/airaider/go_db/controllers"
 	"github.com/go-pg/pg"
 )
 
@@ -21,5 +22,7 @@ func Connect() *pg.DB {
 		os.Exit(100)
 	}
 	log.Printf("Connected to db")
+	controllers.CreateTodoTable(db)
+	controllers.InitiateDB(db)
 	return db
 }
