@@ -8,7 +8,7 @@ import (
 	"github.com/go-pg/pg/v9"
 )
 
-//Connection to db
+// Connect Connection to db
 func Connect() *pg.DB {
 	opts := &pg.Options{
 		User:     "testuser",
